@@ -12,11 +12,12 @@ These instructions guide the release process for new official FinalBiome SDK bui
 
 4. Create the release commit and tag it.
 
-```shell
-git add CHANGELOG
-git commit -m "FinalBiome Unity 1.0.0 release."
-git tag -a v1.0.0 -m "v1.0.0"
-git push origin v1.0.0 master
+```sh
+npx standard-version --bumpFiles Packages/FinalBiome/package.json --infile Packages/FinalBiome/CHANGELOG.md --path Packages/FinalBiome
+```
+and
+```sh
+git push --follow-tags origin main
 ```
 
 5. *The Unity Asset Store is not yet compatible with the new Unity Package Manager format*. For this reason, you will need to temporarily move the `Packages/FinalBiome Unity` directory to `Assets/FinalBiome Unity`.
