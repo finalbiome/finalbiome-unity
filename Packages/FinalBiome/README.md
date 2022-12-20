@@ -88,6 +88,10 @@ Assert.That(resultBet.Status, expression: Is.EqualTo(ResultStatus.Finished));
 Assert.That(resultBet.Result.Outcomes, expression: Has.Count.AtLeast(1));
 ```
 
+## Playground
+
+You can find examples of FinalBiome Unity Client work in the [playground](https://github.com/finalbiome/finalbiome-unity-playground) Unity project.
+
 ## Contribute
 The development roadmap is managed as GitHub issues and pull requests are welcome. 
 
