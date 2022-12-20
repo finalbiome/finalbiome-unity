@@ -18,17 +18,21 @@ public class FinalBiomeManager : MonoBehaviour
     public string Endpoint = "ws://127.0.0.1:9944";
     public string GameAddressSS58Format = "5HGjWAeFDfFCWPsjFQdVV2Msvz2XtMktvgocEZcCj68kUMaw";
     internal ClientConfig config;
-    internal Client Client;
+    /// <summary>
+    /// Instance of the FinalBiome Client
+    /// </summary>
+    /// <value></value>
+    public Client Client { get; internal set; }
 
     /// <summary>
     /// Contains all existing FAs in the game and their balance.
     /// </summary>
-    internal Dictionary<uint, BigInteger> FaBalances = new();
+    public Dictionary<uint, BigInteger> FaBalances { get; internal set; } = new();
 
     /// <summary>
     /// Contains all NFAs owned by the gamer and their details.
     /// </summary>
-    internal Dictionary<(uint classId, uint instanceId), FinalBiome.Api.Types.PalletSupport.TypesNfa.AssetDetails> NfaInstances = new();
+    public Dictionary<(uint classId, uint instanceId), FinalBiome.Api.Types.PalletSupport.TypesNfa.AssetDetails> NfaInstances { get; internal set; } = new();
 
     /// <summary>
     /// The singleton instance of the FinalBiome Sdk Manager
