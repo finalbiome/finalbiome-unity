@@ -107,6 +107,5 @@ public class FinalBiomeManager : MonoBehaviour
     internal void OnApplicationQuit()
     {
         Client.Dispose();
-        Debug.Log("Disposed");
     }
 }
