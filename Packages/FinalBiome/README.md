@@ -11,6 +11,13 @@ You will need to be connected to a production or test FanalBiome Network or run 
 ### Installing the Sdk
 1. Obtain a connection to FinalBiome Network or run a local node.
 2. Download the .unitypackage from the releases [page](https://github.com/finalbiome/finalbiome-unity/releases) and import it into your project.
+
+    Depending on the project template you have chosen, it is possible that the package with the Newtonsoft.Json.dll assembly already exists in the project. In this case, after importing you will see an error:
+    "Multiple precompiled assemblies with the same name Newtonsoft.Json.dll included on the current platform".
+    
+    In this case:
+    1. Remove the Newtonsoft.Json.dll assembly from the Assets/FimalBiome/Runtime/Plugins folder
+    2. Disable Assembly Version Validation in the Player Settings "Assembly Version Validation"
 3. Specify the connection credentials to work with a FinalBiomeManager client object.
     ```cs
     public string Endpoint = "ws://127.0.0.1:9944";
