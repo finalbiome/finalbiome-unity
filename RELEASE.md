@@ -25,7 +25,7 @@ git push --follow-tags origin main
 6. Create the .unitypackage distribution by clicking on `Assets -> Export Package`. When prompted,
 save the file as `FinalBiome.unitypackage` in the repository root.
 
-7. Create a release on GitHub: https://https://github.com/finalbiome/finalbiome-unity/releases/new and attach `FinalBiome.unitypackage` to the release.
+7. Create a release on GitHub: https://github.com/finalbiome/finalbiome-unity/releases/new and attach `FinalBiome.unitypackage` to the release.
 
 8. Login to the Unity Asset Store publisher dashboard: https://publisher.unity.com/packages
 
