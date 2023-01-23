@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.4](https://github.com/finalbiome/finalbiome-unity/compare/v1.1.3...v1.1.4) (2023-01-23)
+
+
+### Bug Fixes
+
+* finalbime sdk version bumps to `v2.1.2` ([3af4446](https://github.com/finalbiome/finalbiome-unity/commit/3af444660c6a5a65ed7a604e6650b59ef4e03bba))
+
 ### [1.1.3](https://github.com/finalbiome/finalbiome-unity/compare/v1.1.2...v1.1.3) (2023-01-22)
 
 
